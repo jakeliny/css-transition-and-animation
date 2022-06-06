@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Animation</title>
+
+  <style>
+    .ball {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      background-color: blueviolet;
+      position: relative;
+      animation-name: example-one;
+      animation-duration: 4s;
+      /* animation-delay: 2s; */
+      /* animation-iteration-count: 3; */
+      /* animation-iteration-count: infinite; */
+      /* animation-direction: reverse; */
+      /* animation-direction: alternate; */
+      /* animation-direction: alternate-reverse; */
+    }
+
+    @keyframes example-one {
+      from {
+        background-color: blueviolet;
+      }
+
+      to {
+        background-color: rosybrown;
+      }
+    }
+
+    @keyframes example-two {
+      0% {
+        background-color: red;
+      }
+
+      25% {
+        background-color: yellow;
+      }
+
+      50% {
+        background-color: blue;
+      }
+
+      100% {
+        background-color: green;
+      }
+    }
+
+    @keyframes example-three {
+      0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+      }
+
+      25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+      }
+
+      50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+      }
+
+      75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+      }
+
+      100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="ball"></div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Animation</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(153, 0, 255);
+      position: relative;
+      border-radius: 100%;
+      animation: example 5s ease;
+
+      animation-fill-mode: forwards;
+      /* animation-fill-mode: backwards; */
+      /* animation-fill-mode: both; */
+    }
+
+
+    @keyframes example {
+      from {
+        left: 0px;
+      }
+
+      to {
+        left: calc(100% - 100px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="ball"></div>
+
+</body>
+
+</html>

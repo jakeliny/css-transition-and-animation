@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Transition Timing Function</title>
+
+  <style>
+    .line {
+      width: 100%;
+      transition: width;
+      transition-duration: 1s;
+      background-color: blue;
+      height: 25px;
+      margin-bottom: 10px;
+    }
+
+    body:hover .line {
+      width: 20px;
+      background-color: rgb(255, 0, 234);
+    }
+
+    .ease {
+      transition-timing-function: ease;
+    }
+
+    .easein {
+      transition-timing-function: ease-in;
+    }
+
+    .easeout {
+      transition-timing-function: ease-out;
+    }
+
+    .easeinout {
+      transition-timing-function: ease-in-out;
+    }
+
+    .linear {
+      transition-timing-function: linear;
+    }
+
+    .cb {
+      transition-timing-function: cubic-bezier(0.2, -2, 0.8, 2);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="line ease"></div>
+  <div class="line easein"></div>
+  <div class="line easeout"></div>
+  <div class="line easeinout"></div>
+  <div class="line linear"></div>
+  <div class="line cb"></div>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Transition</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box-red,
+    .box-green,
+    .box-blue,
+    .box-yellow {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+    }
+
+    .box-red {
+      background-color: #f00;
+    }
+
+    .box-red:hover {
+      background-color: #ff0;
+      transition: background-color;
+      transition-duration: 1s;
+      transition-timing-function: ease-in;
+      transition-delay: 0s;
+    }
+
+    .box-green {
+      background-color: #0f0;
+      transition: width 1s linear 0s;
+    }
+
+    .box-green:hover {
+      width: 200px;
+      /* transition: <property> <duration> <timing-function> <delay>; */
+      transition: width 1s linear 0s;
+    }
+
+    .box-blue {
+      background-color: #00f;
+      transition: all 3s ease 3s;
+    }
+
+    .box-blue:hover {
+      background-color: rgb(255, 0, 208);
+      width: 300px;
+      height: 300px;
+      border-radius: 8px;
+      /* transition-property: background-color, width, height, border-radius; */
+      /* transition-property: all;
+      transition-duration: 3s;
+      transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+      transition-delay: 3s; */
+      transition: all 1s cubic-bezier(.29, 1.01, 1, -0.68) 0s;
+    }
+
+    .box-yellow {
+      background-color: #ff0;
+      transition: opacity 1s linear 0s;
+    }
+
+    .box-yellow:hover {
+      opacity: 0;
+      transition: opacity 1s linear 0s;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="box-red"></div>
+  <div class="box-green"></div>
+  <div class="box-blue"></div>
+  <div class="box-yellow"></div>
+</body>
+
+</html>
