@@ -9,7 +9,14 @@
       height: 50px;
       background-color: rgb(153, 0, 255);
       position: relative;
-      animation: example 5s infinite alternate;
+      animation-name: example;
+      animation-duration: 5s;
+      /* infinite, 1, 2, 3, 4, 5 */
+      animation-iteration-count: infinite;
+      /* normal|reverse|alternate|alternate-reverse */
+      animation-direction: alternate;
+      /* running*/
+      animation-play-state: paused;
     }
 
     .linear {

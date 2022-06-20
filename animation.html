@@ -11,14 +11,16 @@
       border-radius: 100%;
       background-color: blueviolet;
       position: relative;
-      animation-name: example-one;
+
+
+      animation-name: example-three;
       animation-duration: 4s;
-      /* animation-delay: 2s; */
-      /* animation-iteration-count: 3; */
-      /* animation-iteration-count: infinite; */
-      /* animation-direction: reverse; */
-      /* animation-direction: alternate; */
-      /* animation-direction: alternate-reverse; */
+      /* 1s = 1000ms */
+      animation-delay: 2s;
+      /* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 */
+      animation-iteration-count: infinite;
+      /* reverse | alternate | alternate-reverse */
+      animation-direction: alternate-reverse;
     }
 
     @keyframes example-one {
